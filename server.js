@@ -53,7 +53,7 @@ const PORT = process.env.PORT || 3000;
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "https://brainlink-ui.vercel.app/",
+    origin: "https://brainlink-ui.vercel.app",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     //credentials: true,
   },
