@@ -54,9 +54,9 @@ Welcome to the BrainLink Chat App API! This API is built using Node.js, Express,
 
 ### Users
 
-- GET /api/users/:id: Get user info.
-- PUT /api/users/:id: Update user info.
-- DELETE /api/users/:id: Delete user.
+- GET /api/users: Get all Users.
+- POST /api/users: Register User.
+- POST /api/users/:id: Login User.
 
 ### Comments
 
