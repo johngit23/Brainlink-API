@@ -36,14 +36,13 @@ Welcome to the BrainLink Chat App API! This API is built using Node.js, Express,
 
 ## API Endpoints
 
-### Auth
+### Users
 
-- POST /api/auth/register: Register a new user.
-- POST /api/auth/login: Login and obtain JWT token.
-- GET /api/auth/logout: Logout a user and remove JWT token.
-- GET /api/auth/refetch: Refetch user info when they change.
+- GET /api/user : Get all Users.
+- POST /api/user : Register User.
+- POST /api/users/login : Login User.
 
-### Posts
+ ### Posts
 
 - GET /api/posts: Get all blog posts.
 - GET /api/posts/:userId : Get your own posts
@@ -52,13 +51,7 @@ Welcome to the BrainLink Chat App API! This API is built using Node.js, Express,
 - PUT /api/posts/:id: Update an existing blog post.
 - DELETE /api/posts/:id: Delete a blog post.
 
-### Users
-
-- GET /api/users: Get all Users.
-- POST /api/users: Register User.
-- POST /api/users/:id: Login User.
-
-### Comments
+### Messages
 
 - POST /api/comments/create: Comment on a blog post.
 - GET /api/comments/:postId: Get comments on a blog post.
