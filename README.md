@@ -1,6 +1,6 @@
 ## BrainLink ChatApp API
 
-Welcome to the BrainLink Chat App API! This API is built using Node.js, Express, MongoDB ans SocketIO to power a chat application where users can chat, share files and pictures, create caht groups, and many more. 
+Welcome to the BrainLink Chat App API! This API is built using Node.js, Express, MongoDB ans SocketIO to power a chat application where users can chat, share files and pictures, create and manage chat groups, and many more. 
 
 ## Features
 
@@ -42,22 +42,20 @@ Welcome to the BrainLink Chat App API! This API is built using Node.js, Express,
 - POST /api/user : Register User.
 - POST /api/users/login : Login User.
 
- ### Posts
+ ### Chat
 
-- GET /api/posts: Get all blog posts.
-- GET /api/posts/:userId : Get your own posts
-- GET /api/posts/:id : Get a specific blog post by ID.
-- POST /api/posts/create: Create a new blog post.
-- PUT /api/posts/:id: Update an existing blog post.
-- DELETE /api/posts/:id: Delete a blog post.
+- GET /api/chat: Fetch all Chats.
+- POST /api/chat/ : Access a single Chat
+- POST /api/chat/group : Create a Group Chat.
+- PUT /api/chat/rename: Rename an Existing Group Chat.
+- PUT /api/chat/groupadd: Add users to Group Chat.
+- PUT /api/chat/groupremove: Delete users from Group Chat.
 
 ### Messages
 
-- POST /api/comments/create: Comment on a blog post.
-- GET /api/comments/:postId: Get comments on a blog post.
-- POST /api/comments/:id: Update comment on a blog post.
-- DELETE /api/comments/:id: Delete a comment.
-
+- GET /api/message: Fetch all Messages.
+- POST /api/comments/:chatId: Send a Message.
+  
 ## Contributing
 
 Contributions are welcome! Feel free to open issues or pull requests for any improvements or additional features you'd like to see.
